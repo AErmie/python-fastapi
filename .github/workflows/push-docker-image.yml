@@ -19,7 +19,7 @@ jobs:
       
       - name: Downcase Repository Owner
         run: |
-          echo "REPO_OWNER=${env.REPO_OWNER@L}" >>${GITHUB_ENV}
+          echo "REPO_OWNER=${github.repository_owner@L}" >>${GITHUB_ENV}
       
       - name: Report Repository Owner
         run: | 
